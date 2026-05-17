@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d1117;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header{
+    text-align: center;
+    padding: 4rem 1rem;
+
+    background:
+    linear-gradient(
+        rgba(13,17,23,0.85),
+        rgba(13,17,23,0.90)
+    ),
+    url("imagens/fundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 1px solid #30363d;
+}
+
+/* FOTO PERFIL */
+
+header img{
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-bottom: 1rem;
+
+    border: 4px solid #58a6ff;
+
+    box-shadow: 0 0 25px rgba(88, 166, 255, 0.5);
+}
+
+/* TEXTOS HEADER */
+
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p{
+    color: #8b949e;
+}
+
+/* MAIN */
+
+main{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* SECTIONS */
+
+section{
+    margin: 3rem 0;
+}
+
+h2{
+    color: #58a6ff;
+    margin-bottom: 1rem;
+}
+
+#sobre p{
+    color: #c9d1d9;
+}
+
+/* HABILIDADES */
+
+.habilidades-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.habilidades-lista span{
+    background: #161b22;
+
+    padding: 0.8rem 1rem;
+
+    border-radius: 8px;
+
+    border: 1px solid #30363d;
+
+    transition: 0.3s;
+}
+
+.habilidades-lista span:hover{
+    background-color: #1f6feb;
+    transform: translateY(-3px);
+}
+
+/* PROJETOS */
+
+.card-projeto{
+    background: #161b22;
+
+    padding: 1.5rem;
+
+    border-radius: 12px;
+
+    border: 1px solid #30363d;
+
+    transition: 0.3s;
+}
+
+.card-projeto:hover{
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+}
+
+.card-projeto h3{
+    margin-bottom: 0.8rem;
+    color: #58a6ff;
+}
+
+.card-projeto p{
+    color: #c9d1d9;
+}
+
+/* CONTATO */
+
+#contato p{
+    margin-bottom: 0.7rem;
+    color: #c9d1d9;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 600px){
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    .habilidades-lista{
+        flex-direction: column;
+    }
+a{
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+}
